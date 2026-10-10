@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>バナー・ロゴ デザイン見本集</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Dela+Gothic+One&family=M+PLUS+Rounded+1c:wght@800&family=Montserrat:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@600;700;800&family=Zen+Maru+Gothic:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F5F7;--ink:#1E2430;--sub:#5F6878;--line:#DADDE3;--white:#FFFFFF}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",sans-serif;line-height:1.8}
+:focus-visible{outline:3px solid #2F6BFF;outline-offset:3px}
+.notice{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 16px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{padding:64px 0 32px}
+h1{font-size:clamp(26px,4vw,36px);font-weight:700;margin-bottom:12px}
+header p{color:var(--sub);max-width:38em}
+nav{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+nav a{font-size:14px;color:var(--ink);text-decoration:none;border:1px solid var(--ink);border-radius:999px;padding:4px 16px}
+nav a:hover{background:var(--ink);color:#fff}
+h2{font-size:24px;font-weight:700;margin:48px 0 6px}
+.lead{color:var(--sub);font-size:15px;margin-bottom:24px}
+/* ロゴ */
+.logos{display:grid;gap:24px}
+.logo{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px}
+.logo .biz{font-size:13px;color:var(--sub)}
+.logo h3{font-size:19px;font-weight:700;margin-bottom:16px}
+.views{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.v{border:1px solid var(--line);border-radius:8px;padding:20px 24px;display:flex;align-items:center;justify-content:center;gap:16px;min-height:150px}
+.v svg{width:100%;max-width:400px;height:auto}
+.v .mk{width:72px;max-width:72px;flex:none}
+.v .app{border-radius:18px;padding:10px}
+.cap{font-size:12px;color:var(--sub);text-align:center;margin-top:4px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chips span{display:flex;flex-direction:column;align-items:center;font-size:11px;color:var(--sub);font-family:Montserrat,sans-serif}
+.chips i{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);margin-bottom:4px}
+.logo p{font-size:14px;margin-top:14px}
+/* バナー */
+.banners{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.bn{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px}
+.bn.wide{grid-column:1/-1}
+.bn figure{background:#E9EBEF;border-radius:6px;padding:16px;display:flex;justify-content:center}
+.bn figure svg{width:100%;height:auto;display:block;box-shadow:0 2px 10px rgba(30,36,48,.12)}
+.bn .small svg{max-width:300px}
+.meta{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-top:14px;flex-wrap:wrap}
+.meta h3{font-size:17px;font-weight:700}
+.meta .size{font-family:Montserrat,sans-serif;font-size:12px;color:var(--sub);border:1px solid var(--line);border-radius:4px;padding:0 8px}
+.bn p{font-size:14px;margin-top:6px}
+footer{border-top:1px solid var(--line);margin-top:64px;padding:24px 0 40px;font-size:13px;color:var(--sub)}
+footer a{color:var(--ink)}
+@media (max-width:720px){.views,.banners{grid-template-columns:1fr}.v{min-height:120px}}
+</style>
+</head>
+<body>
+
+<!-- ロゴ部品（色は CSS 変数で切り替え） -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark-mone" viewBox="0 0 100 100">
+    <circle cx="38" cy="40" r="26" style="fill:var(--a,#B9A3D0);opacity:.85"/>
+    <circle cx="62" cy="40" r="26" style="fill:var(--b,#8E6C88);opacity:.85"/>
+    <circle cx="50" cy="62" r="26" style="fill:var(--c,#3B2A3F);opacity:.85"/>
+  </symbol>
+  <symbol id="logo-mone" viewBox="0 0 420 140">
+    <use href="#mark-mone" x="4" y="22" width="96" height="96"/>
+    <text x="120" y="80" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:54px;fill:var(--ink,#3B2A3F)">atelier mone</text>
+    <text x="123" y="110" style="font-family:Montserrat,sans-serif;font-weight:500;font-size:12px;letter-spacing:5px;fill:var(--sub,#8E6C88)">HAIR COLOR SALON</text>
+  </symbol>
+
+  <symbol id="mark-midori" viewBox="0 0 100 100">
+    <rect x="4" y="4" width="92" height="92" rx="26" style="fill:var(--a,#5E8C6A)"/>
+    <path d="M50 16C76 28 80 64 50 86C20 64 24 28 50 16Z" style="fill:var(--p,#FFFFFF)"/>
+    <g style="fill:var(--a,#5E8C6A)">
+      <rect x="46" y="30" width="8" height="8" rx="3"/><rect x="46" y="41" width="8" height="8" rx="3"/>
+      <rect x="46" y="52" width="8" height="8" rx="3"/><rect x="46" y="63" width="8" height="8" rx="3"/>
+      <rect x="47" y="74" width="6" height="6" rx="3"/>
+    </g>
+    <circle cx="78" cy="24" r="7" style="fill:var(--c,#F2C14E)"/>
+  </symbol>
+  <symbol id="logo-midori" viewBox="0 0 420 140">
+    <use href="#mark-midori" x="4" y="22" width="96" height="96"/>
+    <text x="118" y="82" style="font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:46px;fill:var(--ink,#1F4D3A)">みどり整体院</text>
+    <text x="121" y="112" style="font-family:Montserrat,sans-serif;font-weight:600;font-size:12px;letter-spacing:4px;fill:var(--sub,#5E8C6A)">MIDORI SEITAI CLINIC</text>
+  </symbol>
+
+  <symbol id="mark-minato" viewBox="0 0 100 100">
+    <path d="M50 6L88 20V52C88 74 72 88 50 96C28 88 12 74 12 52V20Z" style="fill:var(--a,#1C2B4A);stroke:var(--b,#A8874A);stroke-width:3"/>
+    <path d="M32 44L50 30L68 44" style="fill:none;stroke:var(--p,#FFFFFF);stroke-width:4;stroke-linecap:round;stroke-linejoin:round"/>
+    <g style="fill:none;stroke:var(--b,#A8874A);stroke-width:3;stroke-linecap:round">
+      <path d="M28 60q5.5-6 11 0t11 0t11 0t11 0"/>
+      <path d="M33 72q4.25-5 8.5 0t8.5 0t8.5 0t8.5 0"/>
+    </g>
+  </symbol>
+  <symbol id="logo-minato" viewBox="0 0 420 140">
+    <use href="#mark-minato" x="4" y="22" width="96" height="96"/>
+    <text x="116" y="80" style="font-family:'Shippori Mincho',serif;font-weight:700;font-size:36px;fill:var(--ink,#1C2B4A)">みなと相続相談室</text>
+    <text x="118" y="110" style="font-family:'Noto Sans JP',sans-serif;font-weight:500;font-size:13px;letter-spacing:3px;fill:var(--sub,#A8874A)">行政書士事務所｜相続・遺言</text>
+  </symbol>
+
+  <symbol id="mark-code" viewBox="0 0 100 100">
+    <line x1="50" y1="10" x2="50" y2="22" style="stroke:var(--ink2,#1A1A40);stroke-width:4;stroke-linecap:round"/>
+    <circle cx="50" cy="9" r="6" style="fill:var(--c,#FF6B6B)"/>
+    <rect x="7" y="44" width="10" height="22" rx="4" style="fill:var(--b,#FFD23F)"/>
+    <rect x="83" y="44" width="10" height="22" rx="4" style="fill:var(--b,#FFD23F)"/>
+    <rect x="14" y="22" width="72" height="66" rx="18" style="fill:var(--a,#2F6BFF)"/>
+    <rect x="24" y="34" width="52" height="32" rx="9" style="fill:var(--p,#FFFFFF)"/>
+    <g style="fill:none;stroke:var(--ink2,#1A1A40);stroke-width:4;stroke-linecap:round;stroke-linejoin:round">
+      <path d="M41 43l-7 7l7 7"/><path d="M59 43l7 7l-7 7"/>
+    </g>
+    <rect x="42" y="74" width="16" height="4" rx="2" style="fill:var(--p,#FFFFFF)"/>
+  </symbol>
+  <symbol id="logo-code" viewBox="0 0 420 140">
+    <use href="#mark-code" x="4" y="20" width="100" height="100"/>
+    <text x="118" y="82" style="font-family:'M PLUS Rounded 1c',sans-serif;font-weight:800;font-size:52px"><tspan style="fill:var(--a,#2F6BFF)">コード</tspan><tspan style="fill:var(--c,#FF6B6B)">っこ</tspan></text>
+    <text x="121" y="114" style="font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:16px;fill:var(--ink,#1A1A40)">こどもプログラミング教室</text>
+  </symbol>
+
+  <symbol id="mark-tori" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="46" style="fill:var(--c,#B83A2E)"/>
+    <circle cx="50" cy="50" r="39" style="fill:none;stroke:var(--p,#EDE6D6);stroke-width:1.5"/>
+    <text x="50" y="67" text-anchor="middle" style="font-family:'Shippori Mincho',serif;font-weight:800;font-size:46px;fill:var(--p,#EDE6D6)">鳥</text>
+  </symbol>
+  <symbol id="logo-tori" viewBox="0 0 420 140">
+    <use href="#mark-tori" x="4" y="22" width="96" height="96"/>
+    <text x="122" y="50" style="font-family:'Noto Sans JP',sans-serif;font-weight:500;font-size:14px;letter-spacing:10px;fill:var(--sub,#B83A2E)">炭火焼鳥</text>
+    <text x="116" y="108" style="font-family:'Shippori Mincho',serif;font-weight:800;font-size:58px;fill:var(--ink,#24324A)">とりかね</text>
+  </symbol>
+
+  <symbol id="mark-mugi" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="46" style="fill:var(--c,#F2DDB6)"/>
+    <path d="M50 88V30" style="fill:none;stroke:var(--a,#C98B3C);stroke-width:3;stroke-linecap:round"/>
+    <g style="fill:var(--a,#C98B3C)">
+      <ellipse cx="50" cy="24" rx="5" ry="10"/>
+      <ellipse cx="43" cy="36" rx="5.5" ry="10" transform="rotate(-28 43 36)"/><ellipse cx="57" cy="36" rx="5.5" ry="10" transform="rotate(28 57 36)"/>
+      <ellipse cx="43" cy="50" rx="5.5" ry="10" transform="rotate(-28 43 50)"/><ellipse cx="57" cy="50" rx="5.5" ry="10" transform="rotate(28 57 50)"/>
+      <ellipse cx="43" cy="64" rx="5.5" ry="10" transform="rotate(-28 43 64)"/><ellipse cx="57" cy="64" rx="5.5" ry="10" transform="rotate(28 57 64)"/>
+    </g>
+  </symbol>
+  <symbol id="logo-mugi" viewBox="0 0 420 140">
+    <use href="#mark-mugi" x="4" y="22" width="96" height="96"/>
+    <text x="120" y="86" style="font-family:'Shippori Mincho',serif;font-weight:700;font-size:56px;fill:var(--ink,#3A2A1E)">麦と灯</text>
+    <text x="123" y="114" style="font-family:Montserrat,sans-serif;font-weight:600;font-size:12px;letter-spacing:5px;fill:var(--sub,#C98B3C)">MUGI TO AKARI BAKERY</text>
+  </symbol>
+
+  <pattern id="wheat" width="130" height="130" patternUnits="userSpaceOnUse">
+    <use href="#mark-mugi" x="25" y="25" width="80" height="80" style="--a:#EADBC0;--c:transparent"/>
+  </pattern>
+</svg>
+
+<div class="notice">デザインサンプルです。掲載の店舗・事務所・価格・日程はすべて架空のものです。</div>
+
+<div class="wrap">
+  <header>
+    <h1>バナー・ロゴ デザイン見本集</h1>
+    <p>業種ごとにロゴを作り、そのロゴを使ってSNS投稿・広告・ヘッダー画像などのバナーを制作した見本です。ロゴは、通常版・反転版・マークのみ・使用色までセットでお渡しする想定です。</p>
+    <nav><a href="#logo">ロゴ 6点</a><a href="#banner">バナー 7点</a></nav>
+  </header>
+
+  <h2 id="logo">ロゴ</h2>
+  <p class="lead">マークと文字の組み合わせ。白い背景・濃い背景・小さいサイズ（アイコン）のどれでも読めるように作っています。</p>
+  <div class="logos">
+
+    <article class="logo">
+      <div class="biz">美容・ヘアサロン</div><h3>atelier mone</h3>
+      <div class="views">
+        <div class="v" style="background:#fff"><svg viewBox="0 0 420 140" role="img" aria-label="atelier mone ロゴ 通常版"><use href="#logo-mone"/></svg></div>
+        <div class="v" style="background:#3B2A3F;--ink:#FFFFFF;--sub:#D9CDE6;--c:#D9CDE6"><svg viewBox="0 0 420 140" role="img" aria-label="反転版"><use href="#logo-mone"/></svg></div>
+        <div class="v" style="background:#fff">
+          <div><svg class="mk" viewBox="0 0 100 100"><use href="#mark-mone"/></svg><div class="cap">マーク</div></div>
+          <div><svg class="mk app" viewBox="0 0 100 100" style="background:#EEF0F3"><use href="#mark-mone"/></svg><div class="cap">アイコン</div></div>
+          <div style="--a:#1E2430;--b:#1E2430;--c:#1E2430"><svg class="mk" viewBox="0 0 100 100"><use href="#mark-mone"/></svg><div class="cap">1色</div></div>
+        </div>
+        <div class="v" style="background:#fff"><div class="chips">
+          <span><i style="background:#EEF0F3"></i>#EEF0F3</span><span><i style="background:#B9A3D0"></i>#B9A3D0</span><span><i style="background:#8E6C88"></i>#8E6C88</span><span><i style="background:#3B2A3F"></i>#3B2A3F</span>
+        </div></div>
+      </div>
+      <p>カラー専門サロン。重なり合う3つの円で「色を重ねて作る髪色」を表しました。筆記体の店名で、上品で柔らかい印象に。</p>
+    </article>
+
+    <article class="logo">
+      <div class="biz">整体院・治療院</div><h3>みどり整体院</h3>
+      <div class="views">
+        <div class="v" style="background:#fff"><svg viewBox="0 0 420 140" role="img" aria-label="みどり整体院 ロゴ 通常版"><use href="#logo-midori"/></svg></div>
+        <div class="v" style="background:#1F4D3A;--ink:#FFFFFF;--sub:#DCE6DA"><svg viewBox="0 0 420 140" role="img" aria-label="反転版"><use href="#logo-midori"/></svg></div>
+        <div class="v" style="background:#fff">
+          <div><svg class="mk" viewBox="0 0 100 100"><use href="#mark-midori"/></svg><div class="cap">マーク</div></div>
+          <div style="--a:#1F4D3A"><svg class="mk app" viewBox="0 0 100 100" style="background:#DCE6DA"><use href="#mark-midori"/></svg><div class="cap">アイコン</div></div>
+          <div style="--a:#1E2430;--c:#1E2430"><svg class="mk" viewBox="0 0 100 100"><use href="#mark-midori"/></svg><div class="cap">1色</div></div>
+        </div>
+        <div class="v" style="background:#fff"><div class="chips">
+          <span><i style="background:#DCE6DA"></i>#DCE6DA</span><span><i style="background:#5E8C6A"></i>#5E8C6A</span><span><i style="background:#1F4D3A"></i>#1F4D3A</span><span><i style="background:#F2C14E"></i>#F2C14E</span>
+        </div></div>
+      </div>
+      <p>葉の中心線を背骨に見立て、「自然に整う体」を表現。丸みのある文字で、初めての方にも入りやすい雰囲気にしました。</p>
+    </article>
+
+    <article class="logo">
+      <div class="biz">士業（行政書士・相続）</div><h3>みなと相続相談室</h3>
+      <div class="views">
+        <div class="v" style="background:#fff"><svg viewBox="0 0 420 140" role="img" aria-label="みなと相続相談室 ロゴ 通常版"><use href="#logo-minato"/></svg></div>
+        <div class="v" style="background:#1C2B4A;--a:#2A3D63;--ink:#FFFFFF;--sub:#C9AE78"><svg viewBox="0 0 420 140" role="img" aria-label="反転版"><use href="#logo-minato"/></svg></div>
+        <div class="v" style="background:#fff">
+          <div><svg class="mk" viewBox="0 0 100 100"><use href="#mark-minato"/></svg><div class="cap">マーク</div></div>
+          <div><svg class="mk app" viewBox="0 0 100 100" style="background:#F5F7FA"><use href="#mark-minato"/></svg><div class="cap">アイコン</div></div>
+          <div style="--a:#1E2430;--b:#1E2430"><svg class="mk" viewBox="0 0 100 100"><use href="#mark-minato"/></svg><div class="cap">1色</div></div>
+        </div>
+        <div class="v" style="background:#fff"><div class="chips">
+          <span><i style="background:#F5F7FA"></i>#F5F7FA</span><span><i style="background:#55627A"></i>#55627A</span><span><i style="background:#1C2B4A"></i>#1C2B4A</span><span><i style="background:#A8874A"></i>#A8874A</span>
+        </div></div>
+      </div>
+      <p>盾の形に「家」と「港の波」。大切な財産を守る、という意味を込めました。明朝体と真鍮色で、落ち着きと信頼感を出しています。</p>
+    </article>
+
+    <article class="logo">
+      <div class="biz">スクール・教室</div><h3>コードっこ教室</h3>
+      <div class="views">
+        <div class="v" style="background:#fff"><svg viewBox="0 0 420 140" role="img" aria-label="コードっこ教室 ロゴ 通常版"><use href="#logo-code"/></svg></div>
+        <div class="v" style="background:#1A1A40;--ink:#FFFFFF;--a:#5B8BFF;--ink2:#1A1A40"><svg viewBox="0 0 420 140" role="img" aria-label="反転版"><use href="#logo-code"/></svg></div>
+        <div class="v" style="background:#fff">
+          <div><svg class="mk" viewBox="0 0 100 100"><use href="#mark-code"/></svg><div class="cap">マーク</div></div>
+          <div><svg class="mk app" viewBox="0 0 100 100" style="background:#FFD23F"><use href="#mark-code"/></svg><div class="cap">アイコン</div></div>
+          <div style="--a:#1E2430;--b:#1E2430;--c:#1E2430;--ink2:#1E2430"><svg class="mk" viewBox="0 0 100 100"><use href="#mark-code"/></svg><div class="cap">1色</div></div>
+        </div>
+        <div class="v" style="background:#fff"><div class="chips">
+          <span><i style="background:#2F6BFF"></i>#2F6BFF</span><span><i style="background:#FFD23F"></i>#FFD23F</span><span><i style="background:#FF6B6B"></i>#FF6B6B</span><span><i style="background:#1A1A40"></i>#1A1A40</span>
+        </div></div>
+      </div>
+      <p>プログラムの記号「&lt; &gt;」を目にしたロボット。子どもが描きたくなる単純な形にし、保護者向けにも幼すぎない配色にしました。</p>
+    </article>
+
+    <article class="logo">
+      <div class="biz">飲食店</div><h3>炭火焼鳥 とりかね</h3>
+      <div class="views">
+        <div class="v" style="background:#EDE6D6"><svg viewBox="0 0 420 140" role="img" aria-label="とりかね ロゴ 通常版"><use href="#logo-tori"/></svg></div>
+        <div class="v" style="background:#24324A;--ink:#EDE6D6;--sub:#C9A877"><svg viewBox="0 0 420 140" role="img" aria-label="反転版"><use href="#logo-tori"/></svg></div>
+        <div class="v" style="background:#fff">
+          <div><svg class="mk" viewBox="0 0 100 100"><use href="#mark-tori"/></svg><div class="cap">マーク</div></div>
+          <div><svg class="mk app" viewBox="0 0 100 100" style="background:#24324A"><use href="#mark-tori"/></svg><div class="cap">アイコン</div></div>
+          <div style="--c:#1E2430;--p:#FFFFFF"><svg class="mk" viewBox="0 0 100 100"><use href="#mark-tori"/></svg><div class="cap">1色</div></div>
+        </div>
+        <div class="v" style="background:#fff"><div class="chips">
+          <span><i style="background:#24324A"></i>#24324A</span><span><i style="background:#EDE6D6"></i>#EDE6D6</span><span><i style="background:#C9A877"></i>#C9A877</span><span><i style="background:#B83A2E"></i>#B83A2E</span>
+        </div></div>
+      </div>
+      <p>朱色の丸い印に「鳥」の一文字。のれん・箸袋・ハンコとして押しても使える形にしています。</p>
+    </article>
+
+    <article class="logo">
+      <div class="biz">パン屋・カフェ</div><h3>麦と灯</h3>
+      <div class="views">
+        <div class="v" style="background:#F6EEDF"><svg viewBox="0 0 420 140" role="img" aria-label="麦と灯 ロゴ 通常版"><use href="#logo-mugi"/></svg></div>
+        <div class="v" style="background:#3A2A1E;--ink:#F6EEDF;--sub:#E3B877;--c:#5A4330;--a:#E3B877"><svg viewBox="0 0 420 140" role="img" aria-label="反転版"><use href="#logo-mugi"/></svg></div>
+        <div class="v" style="background:#fff">
+          <div><svg class="mk" viewBox="0 0 100 100"><use href="#mark-mugi"/></svg><div class="cap">マーク</div></div>
+          <div style="--c:#C98B3C;--a:#FFFFFF"><svg class="mk app" viewBox="0 0 100 100" style="background:#3A2A1E"><use href="#mark-mugi"/></svg><div class="cap">アイコン</div></div>
+          <div style="--a:#1E2430;--c:transparent"><svg class="mk" viewBox="0 0 100 100"><use href="#mark-mugi"/></svg><div class="cap">1色</div></div>
+        </div>
+        <div class="v" style="background:#fff"><div class="chips">
+          <span><i style="background:#F6EEDF"></i>#F6EEDF</span><span><i style="background:#F2DDB6"></i>#F2DDB6</span><span><i style="background:#C98B3C"></i>#C98B3C</span><span><i style="background:#3A2A1E"></i>#3A2A1E</span>
+        </div></div>
+      </div>
+      <p>朝の光を受けた麦の穂。紙袋やショップカードに1色で刷っても形が崩れないよう、線ではなく粒の形で描いています。</p>
+    </article>
+  </div>
+
+  <h2 id="banner">バナー</h2>
+  <p class="lead">上のロゴを使って、用途ごとの決まったサイズで制作したバナーです。「何を一番に伝えるか」を1つに絞って配置しています。</p>
+  <div class="banners">
+
+    <div class="bn">
+      <figure><svg viewBox="0 0 1080 1080" role="img" aria-label="atelier mone 秋の新色 Instagram投稿">
+        <rect width="1080" height="1080" fill="#EEF0F3"/>
+        <circle cx="830" cy="330" r="260" fill="#B9A3D0" opacity=".85"/>
+        <circle cx="660" cy="520" r="200" fill="#8E6C88" opacity=".55"/>
+        <circle cx="910" cy="640" r="150" fill="#D9CDE6" opacity=".9"/>
+        <use href="#logo-mone" x="64" y="56" width="360" height="120"/>
+        <text x="80" y="420" font-family="Montserrat" font-weight="600" font-size="28" letter-spacing="6" fill="#8E6C88">AUTUMN COLOR 2026</text>
+        <text x="70" y="570" font-family="Shippori Mincho" font-weight="700" font-size="150" fill="#3B2A3F">秋の新色</text>
+        <text x="80" y="660" font-family="Shippori Mincho" font-weight="600" font-size="56" fill="#3B2A3F">ラベンダーグレージュ</text>
+        <rect x="72" y="790" width="936" height="210" rx="8" fill="#FFFFFF"/>
+        <text x="120" y="868" font-family="Noto Sans JP" font-weight="700" font-size="34" fill="#3B2A3F">初回カラー</text>
+        <text x="116" y="958" font-family="Montserrat" font-weight="800" font-size="76" fill="#8E6C88">20%OFF</text>
+        <text x="968" y="868" text-anchor="end" font-family="Noto Sans JP" font-weight="500" font-size="30" fill="#5F6878">通常 ¥7,700 →</text>
+        <text x="968" y="962" text-anchor="end" font-family="Montserrat" font-weight="800" font-size="96" fill="#3B2A3F">¥6,160</text>
+      </svg></figure>
+      <div class="meta"><h3>Instagram 投稿</h3><span class="size">1080 × 1080</span></div>
+      <p>atelier mone / 新色キャンペーン。スマホで流し見されても、色の丸と「秋の新色」が最初に目に入る配置です。</p>
+    </div>
+
+    <div class="bn">
+      <figure class="small"><svg viewBox="0 0 300 250" role="img" aria-label="みどり整体院 ディスプレイ広告">
+        <rect width="300" height="250" fill="#1F4D3A"/>
+        <circle cx="300" cy="0" r="120" fill="#5E8C6A" opacity=".5"/>
+        <use href="#mark-midori" x="16" y="14" width="28" height="28" style="--p:#DCE6DA"/>
+        <text x="52" y="34" font-family="Zen Maru Gothic" font-weight="700" font-size="14" fill="#FFFFFF">みどり整体院</text>
+        <text x="16" y="88" font-family="Zen Maru Gothic" font-weight="700" font-size="26" fill="#FFFFFF">その肩こり、</text>
+        <text x="16" y="124" font-family="Zen Maru Gothic" font-weight="700" font-size="26" fill="#FFFFFF">あきらめないで。</text>
+        <rect x="16" y="140" width="268" height="44" rx="6" fill="#F2C14E"/>
+        <text x="150" y="171" text-anchor="middle" font-family="Zen Maru Gothic" font-weight="700" fill="#1F4D3A"><tspan font-size="15">初回限定 </tspan><tspan font-size="26">¥2,980</tspan></text>
+        <rect x="16" y="196" width="268" height="40" rx="20" fill="#FFFFFF"/>
+        <text x="150" y="222" text-anchor="middle" font-family="Zen Maru Gothic" font-weight="700" font-size="16" fill="#1F4D3A">WEB予約はこちら ›</text>
+      </svg></figure>
+      <div class="meta"><h3>ディスプレイ広告（レクタングル）</h3><span class="size">300 × 250</span></div>
+      <p>みどり整体院 / 初回料金の告知。小さな広告枠なので、悩み・料金・ボタンの3段だけに絞りました。</p>
+    </div>
+
+    <div class="bn wide">
+      <figure><svg viewBox="0 0 728 90" role="img" aria-label="みなと相続相談室 横長バナー" style="max-width:728px">
+        <rect width="728" height="90" fill="#1C2B4A"/>
+        <rect y="86" width="728" height="4" fill="#A8874A"/>
+        <use href="#mark-minato" x="14" y="12" width="62" height="62" style="--a:#2A3D63"/>
+        <text x="90" y="44" font-family="Shippori Mincho" font-weight="700" font-size="24" fill="#FFFFFF">相続手続き、何から始める？</text>
+        <text x="90" y="70" font-family="Noto Sans JP" font-size="13" fill="#C9D1DE">期限のある手続きを、行政書士が順番に整理します。</text>
+        <rect x="520" y="18" width="190" height="52" rx="4" fill="#A8874A"/>
+        <text x="615" y="52" text-anchor="middle" font-family="Shippori Mincho" font-weight="700" font-size="22" fill="#1C2B4A">初回相談 無料</text>
+      </svg></figure>
+      <div class="meta"><h3>横長バナー（ビッグバナー）</h3><span class="size">728 × 90</span></div>
+      <p>みなと相続相談室 / 無料相談の案内。ブログ記事の上下などに入る細長い枠です。左で悩みに共感し、右端で行動を促します。</p>
+    </div>
+
+    <div class="bn wide">
+      <figure><svg viewBox="0 0 1280 720" role="img" aria-label="コードっこ教室 YouTubeサムネイル">
+        <rect width="1280" height="720" fill="#FFD23F"/>
+        <polygon points="780,0 1280,0 1280,720 640,720" fill="#2F6BFF"/>
+        <g fill="#FFFFFF" opacity=".18">
+          <circle cx="900" cy="80" r="6"/><circle cx="980" cy="80" r="6"/><circle cx="1060" cy="80" r="6"/><circle cx="1140" cy="80" r="6"/><circle cx="1220" cy="80" r="6"/>
+          <circle cx="880" cy="640" r="6"/><circle cx="960" cy="640" r="6"/><circle cx="1040" cy="640" r="6"/><circle cx="1120" cy="640" r="6"/><circle cx="1200" cy="640" r="6"/>
+        </g>
+        <use href="#mark-code" x="790" y="130" width="440" height="440" style="--a:#FFFFFF;--p:#1A1A40;--ink2:#FFD23F"/>
+        <use href="#logo-code" x="50" y="24" width="300" height="100"/>
+        <text x="60" y="240" font-family="Dela Gothic One" font-size="110" fill="#1A1A40">小学生が</text>
+        <text x="60" y="400" font-family="Dela Gothic One" font-size="140" fill="#FF6B6B" stroke="#1A1A40" stroke-width="14" stroke-linejoin="round" paint-order="stroke">ゲームを</text>
+        <text x="60" y="555" font-family="Dela Gothic One" font-size="140" fill="#FFFFFF" stroke="#1A1A40" stroke-width="14" stroke-linejoin="round" paint-order="stroke">作った！</text>
+        <rect y="605" width="620" height="84" fill="#1A1A40"/>
+        <text x="60" y="663" font-family="Dela Gothic One" font-size="44" fill="#FFD23F">無料体験会 開催中</text>
+      </svg></figure>
+      <div class="meta"><h3>YouTube サムネイル</h3><span class="size">1280 × 720</span></div>
+      <p>コードっこ教室 / 体験会の紹介動画。一覧の小さな表示でも読めるよう、文字は3行・太い縁取りにしています。</p>
+    </div>
+
+    <div class="bn wide">
+      <figure><svg viewBox="0 0 1280 670" role="img" aria-label="とりかね 忘年会コース 記事ヘッダー">
+        <rect width="1280" height="670" fill="#24324A"/>
+        <rect x="30" y="30" width="1220" height="610" fill="none" stroke="#C9A877" stroke-opacity=".5" stroke-width="2"/>
+        <circle cx="260" cy="335" r="210" fill="#2E3E5A"/>
+        <use href="#mark-tori" x="110" y="185" width="300" height="300"/>
+        <text x="522" y="200" font-family="Noto Sans JP" font-weight="500" font-size="30" letter-spacing="8" fill="#C9A877">炭火焼鳥 とりかね</text>
+        <text x="514" y="340" font-family="Shippori Mincho" font-weight="800" font-size="110" fill="#EDE6D6">忘年会コース</text>
+        <text x="522" y="425" font-family="Noto Sans JP" font-weight="500" font-size="36" fill="#EDE6D6">2時間飲み放題付き・全8品</text>
+        <text x="518" y="525" font-family="Shippori Mincho" font-weight="800" fill="#C9A877"><tspan font-size="84">5,000</tspan><tspan font-size="36">円（税込）から</tspan></text>
+        <text x="522" y="590" font-family="Noto Sans JP" font-size="26" fill="#9AA6BA">12月のご予約、受付中です</text>
+      </svg></figure>
+      <div class="meta"><h3>ブログ・note 記事ヘッダー</h3><span class="size">1280 × 670</span></div>
+      <p>とりかね / 宴会コースの告知。藍色と朱色の印でお店の空気感を出し、金額は一番大きく見せています。</p>
+    </div>
+
+    <div class="bn wide">
+      <figure><svg viewBox="0 0 1500 500" role="img" aria-label="麦と灯 Xヘッダー画像">
+        <rect width="1500" height="500" fill="#F6EEDF"/>
+        <rect width="1500" height="500" fill="url(#wheat)"/>
+        <rect x="640" y="70" width="800" height="360" rx="6" fill="#F6EEDF"/>
+        <rect x="640" y="70" width="800" height="360" rx="6" fill="none" stroke="#C98B3C" stroke-width="2"/>
+        <use href="#logo-mugi" x="680" y="96" width="390" height="130"/>
+        <text x="692" y="300" font-family="Shippori Mincho" font-weight="700" font-size="44" fill="#3A2A1E">毎朝7時、焼きたてが並びます。</text>
+        <text x="694" y="360" font-family="Noto Sans JP" font-size="22" fill="#7A6450">天然酵母のカンパーニュ／塩バターロール／季節のデニッシュ</text>
+        <text x="694" y="398" font-family="Noto Sans JP" font-size="22" fill="#7A6450">火曜・水曜定休</text>
+      </svg></figure>
+      <div class="meta"><h3>X（旧Twitter）ヘッダー</h3><span class="size">1500 × 500</span></div>
+      <p>麦と灯 / アカウントの顔。左下はプロフィール画像に隠れるため、文字はすべて右側に寄せています。</p>
+    </div>
+
+    <div class="bn wide">
+      <figure><svg viewBox="0 0 1200 630" role="img" aria-label="kinari セールバナー">
+        <rect width="1200" height="630" fill="#E9E4DA"/>
+        <rect x="0" y="0" width="14" height="630" fill="#D9542B"/>
+        <text x="70" y="110" font-family="Montserrat" font-weight="700" font-size="40" letter-spacing="4" fill="#1E2430">kinari</text>
+        <text x="236" y="108" font-family="Noto Sans JP" font-weight="500" font-size="22" fill="#5F6878">生活雑貨のオンラインショップ</text>
+        <text x="58" y="370" font-family="Montserrat" font-weight="800" font-size="290" fill="#D9542B">SALE</text>
+        <text x="70" y="480" font-family="Noto Sans JP" font-weight="900" fill="#1E2430"><tspan font-size="48">最大</tspan><tspan font-family="Montserrat" font-weight="800" font-size="96">50%</tspan><tspan font-family="Montserrat" font-weight="800" font-size="64">OFF</tspan></text>
+        <text x="74" y="560" font-family="Montserrat" font-weight="600" font-size="32" letter-spacing="2" fill="#5F6878">10.17 — 10.26</text>
+        <g transform="translate(1035 330) rotate(10)">
+          <rect x="-115" y="-170" width="230" height="330" rx="16" fill="#1E2430"/>
+          <circle cy="-128" r="14" fill="#E9E4DA"/>
+          <text y="-30" text-anchor="middle" font-family="Noto Sans JP" font-weight="900" font-size="48" fill="#FFFFFF">期間中</text>
+          <text y="40" text-anchor="middle" font-family="Noto Sans JP" font-weight="900" font-size="40" fill="#F2C14E">送料無料</text>
+          <text y="96" text-anchor="middle" font-family="Noto Sans JP" font-weight="500" font-size="22" fill="#FFFFFF">5,500円以上の注文</text>
+        </g>
+      </svg></figure>
+      <div class="meta"><h3>セール告知（SNSシェア・OGP画像）</h3><span class="size">1200 × 630</span></div>
+      <p>kinari / ECサイトのセール。URLをSNSで共有したときに出る画像です。「SALE」の文字そのものを主役にしました。</p>
+    </div>
+  </div>
+
+  <footer>
+    掲載している店舗・事務所・教室・価格・日程は、すべてデザインサンプル用の架空のものです。<br>
+    同じ架空店舗のランディングページ見本は <a href="https://oyusuke0603.github.io/lp-samples/">LPデザインサンプル集</a> にあります。
+  </footer>
+</div>
+</body>
+</html>
